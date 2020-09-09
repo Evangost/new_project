@@ -1,9 +1,11 @@
 import '../scss/main.scss';
 import 'intersection-observer';
 import $ from 'jquery';
+import 'jquery-ui'
+import 'jquery-ui/ui/effect'
 import 'bootstrap';
 import 'popper.js';
-import Swiper from 'swiper';
+import Swiper from 'swiper/dist/js/swiper.min';
 
 $(window).on('load', function () {
     let b = $('body');
@@ -36,25 +38,31 @@ $(function () {
         });
     }
 
-    let slider = new Swiper('.swiper-container', {
-        observer: true,
-        observerParents: true,
-        effect: 'slide',
-        direction: 'horizontal',
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: true,
-        dynamicBullets: true,
-    });
+    if ($('.swiper-container').length) {
+        let slider;
+        let slide = document.querySelectorAll('.swiper-container .swiper-slide').length;
+
+        if (slide > 2) {
+            slider = new Swiper('.swiper-container', {
+                observer: true,
+                observeParents: true,
+                loop: true,
+                autoplay: true,
+                spaceBetween: 25,
+                slidesPerView: 2,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                dynamicBullets: true,
+            });
+        }
+    }
 });

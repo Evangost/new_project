@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no">
     <title>Главная</title>
 </head>
-
 <body class="loaded">
-
 <!-- BODY -->
 <div class="main-wrapper">
     <!-- HEADER -->
@@ -21,7 +19,6 @@
 
     <!-- CONTENT -->
     <main class="content">
-
         <div class="section">
             <div class="container">
                 <h2 class="title m-0">Section Title</h2>
@@ -29,9 +26,35 @@
                 <div class="main-slider swiper-container">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img src="https://nysurfsoccer.org/wp-content/uploads/2017/03/IMG.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://nysurfsoccer.org/wp-content/uploads/2017/03/IMG.png" alt=""></div>
-                        <div class="swiper-slide"><img src="https://nysurfsoccer.org/wp-content/uploads/2017/03/IMG.png" alt=""></div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                            </picture>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                            </picture>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                            </picture>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                            </picture>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                            </picture>
+                        </div>
                     </div>
 
                     <div class="swiper-pagination"></div>
@@ -44,14 +67,17 @@
             </div>
         </div>
 
-        <picture>
-            <img src="<%= require('./img/loader.svg') %>" data-src="<%= require('./img/loader.svg') %>" alt="loader" title="loader">
-        </picture>
+        <div class="section">
+            <div class="container">
+                <picture>
+                    <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="loader" title="loader">
+                </picture>
 
-        <svg>
-            <use xlink:href="img/spritemap.svg#sprite-ok"></use>
-        </svg>
-
+                <svg>
+                    <use xlink:href="img/spritemap.svg#sprite-ok"></use>
+                </svg>
+            </div>
+        </div>
     </main>
     <!-- CONTENT END -->
 
@@ -64,8 +90,9 @@
     <!-- FOOTER END -->
 </div>
 
-<div class="icon-load"></div>
+<div class="icon-load">
+    <picture><img src="<%= require('./img/loader.svg') %>" alt="pre-loader"></picture>
+</div>
 <!-- BODY END   -->
-
 </body>
 </html>
