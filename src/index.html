@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container bg-light">
-            <h1 class="m-0">Header Title</h1>
+            <h1>Header Title</h1>
         </div>
     </header>
     <!-- HEADER END -->
@@ -21,7 +21,7 @@
     <main class="content">
         <div class="section">
             <div class="container">
-                <h2 class="title m-0">Section Title</h2>
+                <h2>Section Slider</h2>
 
                 <div class="main-slider swiper-container">
                     <div class="swiper-wrapper">
@@ -62,13 +62,14 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
-                    <div class="swiper-scrollbar"></div>
+                    <!--<div class="swiper-scrollbar"></div>-->
                 </div>
             </div>
         </div>
 
         <div class="section">
             <div class="container">
+                <h2>Section Pictures</h2>
                 <picture>
                     <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="loader" title="loader">
                 </picture>
@@ -76,6 +77,22 @@
                 <svg>
                     <use xlink:href="img/spritemap.svg#sprite-ok"></use>
                 </svg>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <h2>Section Range slider</h2>
+
+                <div class="slider-range"><input type="range" value="75" min="1" max="100"></div>
+                <div class="slider-range"><input type="range" value="275" max="1000"></div>
+                <div class="slider-range"><input type="range"></div>
+
+                <br>
+
+                <div class="slider-handles"><input type="range" min="2000" max="10000"></div>
+                <div class="slider-handles"><input type="range" max="1000"></div>
+                <div class="slider-handles"><input type="range"></div>
             </div>
         </div>
     </main>
