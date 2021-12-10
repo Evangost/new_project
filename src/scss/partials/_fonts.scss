@@ -1,2 +1,15 @@
 $fonts-path: '../fonts/';
 
+@font-face {
+	font-family:'Venus';
+	src: url('#{$fonts-path}Venus_Regular.eot');
+  src: url('#{$fonts-path}Venus_Regular.eot?#iefix') format('embedded-opentype'),
+	  url('#{$fonts-path}Venus_Regular.woff2') format('woff2'),
+	  url('#{$fonts-path}Venus_Regular.woff') format('woff'),
+	  url('#{$fonts-path}Venus_Regular.ttf') format('truetype'),
+	  url('#{$fonts-path}Venus_Regular.svg#g Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0
+}
