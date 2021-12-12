@@ -1,15 +1,28 @@
 $fonts-path: '../fonts/';
 
 @font-face {
-	font-family:'Venus';
-	src: url('#{$fonts-path}Venus_Regular.eot');
-  src: url('#{$fonts-path}Venus_Regular.eot?#iefix') format('embedded-opentype'),
-	  url('#{$fonts-path}Venus_Regular.woff2') format('woff2'),
-	  url('#{$fonts-path}Venus_Regular.woff') format('woff'),
-	  url('#{$fonts-path}Venus_Regular.ttf') format('truetype'),
-	  url('#{$fonts-path}Venus_Regular.svg#g Regular') format('svg');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0
+    font-family:'Venus Rising';
+    src: url('#{$fonts-path}VenusRising-Regular.eot');
+	src: url('#{$fonts-path}VenusRising-Regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}VenusRising-Regular.woff2') format('woff2'),
+		url('#{$fonts-path}VenusRising-Regular.woff') format('woff'),
+		url('#{$fonts-path}VenusRising-Regular.ttf') format('truetype'),
+		url('#{$fonts-path}VenusRising-Regular.svg#VenusRising-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2212;
+}
+@font-face {
+    font-family:'Geometria';
+    src: url('#{$fonts-path}Geometria-Thin.eot');
+	src: url('#{$fonts-path}Geometria-Thin.eot?#iefix') format('embedded-opentype'),
+		url('#{$fonts-path}Geometria-Thin.woff2') format('woff2'),
+		url('#{$fonts-path}Geometria-Thin.woff') format('woff'),
+		url('#{$fonts-path}Geometria-Thin.ttf') format('truetype'),
+		url('#{$fonts-path}Geometria-Thin.svg#Geometria-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-0491;
 }

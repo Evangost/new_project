@@ -30,13 +30,13 @@ $(function () {
                 observer: true,
                 observeParents: true,
                 loop: true,
-                autoplay: true,
-                spaceBetween: 25,
+                autoplay: false,
+                spaceBetween: 0,
                 slidesPerView: 1,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
+               /* navigation: {
+                     nextEl: '.swiper-button-next',
+                     prevEl: '.swiper-button-prev'
+                 },*/
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true
@@ -45,55 +45,6 @@ $(function () {
                     el: '.swiper-scrollbar',
                 },*/
                 dynamicBullets: true,
-            });
-        }
-    }
-
-    // Range slide
-    if ($('input[type="range"]')) {
-        let sliderRange = document.querySelectorAll('.slider-range');
-        let sliderHandles = document.querySelectorAll('.slider-handles');
-
-        if (sliderRange.length) {
-            sliderRange.forEach(function (elem) {
-                let input = elem.childNodes[0];
-                let startValue = input.hasAttribute('value') ? Number(input.getAttribute('value')) : 1;
-                let minValue = input.hasAttribute('min') ? Number(input.getAttribute('min')) : 1;
-                let maxValue = input.hasAttribute('max') ? Number(input.getAttribute('max')) : 100;
-
-                input.remove();
-
-                noUiSlider.create(elem, {
-                    start: [startValue],
-                    step: 1,
-                    behavior: 'tap',
-                    connect: [true, false],
-                    range: {
-                        'min': [minValue],
-                        'max': [maxValue]
-                    }
-                });
-            });
-        }
-
-        if (sliderHandles.length) {
-            sliderHandles.forEach(function (elem) {
-                let input = elem.childNodes[0];
-                let minValue = input.hasAttribute('min') ? Number(input.getAttribute('min')) : 1;
-                let maxValue = input.hasAttribute('max') ? Number(input.getAttribute('max')) : 100;
-
-                input.remove();
-
-                noUiSlider.create(elem, {
-                    start: [minValue, maxValue/2],
-                    step: 1,
-                    behavior: 'tap-drag',
-                    connect: true,
-                    range: {
-                        'min': minValue,
-                        'max': maxValue
-                    }
-                });
             });
         }
     }

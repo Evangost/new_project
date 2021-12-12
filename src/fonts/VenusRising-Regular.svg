@@ -3,7 +3,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <font id="VenusRising-Regular" horiz-adv-x="1035">
-<font-face font-family="g" font-weight="400" ascent="755" bbox="-48 -228 1950 962" cap-height="739" descent="-245" panose-1="2 0 4 0 0 0 0 0 0 0" underline-position="-143" underline-thickness="20" unicode-range="U+0020-2212" units-per-em="1000" x-height="739"/>
+<font-face font-family="Venus Rising" font-weight="400" ascent="755" bbox="-48 -228 1950 962" cap-height="739" descent="-245" panose-1="2 0 4 0 0 0 0 0 0 0" underline-position="-143" underline-thickness="20" unicode-range="U+0020-2212" units-per-em="1000" x-height="739"/>
 <missing-glyph/>
 <glyph d="M380 167q-150 0 -150 152v101q0 151 150 151h205v-62h-205q-88 0 -88 -89v-101q0 -90 88 -90h205v-62h-205zM127 151q0 -89 89 -89h396q89 0 89 87v439q0 89 -89 89h-396q-89 0 -89 -89v-437zM216 0q-150 0 -150 151v437q0 151 150 151h396q151 0 151 -151v-439 q0 -149 -151 -149h-396z" glyph-name="copyright" horiz-adv-x="829" unicode="(c)"/>
 <glyph d="M249 502h98q21 0 21 22v30q0 23 -27 23h-92v-75zM202 351v275h139q75 0 75 -61v-48q0 -22 -13 -36t-40 -17l55 -113h-54l-48 107h-67v-107h-47zM121 375q0 -51 20 -76t68 -25h183q54 0 75 25.5t21 73.5v209q0 51 -21 76.5t-75 25.5h-171q-57 0 -78.5 -23.5t-21.5 -78.5 v-207zM216 220q-150 0 -150 151v217q0 151 150 151h176q151 0 151 -151v-219q0 -149 -151 -149h-176z" glyph-name="registered" horiz-adv-x="609" unicode="(R)"/>

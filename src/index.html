@@ -11,8 +11,11 @@
 <div class="main-wrapper">
     <!-- HEADER -->
     <header class="header">
-        <div class="container-fluid">
-			  <ul class="nav justify-content-end">
+        <div class="container-fluid row">
+			  <div class="main-logo col-4">
+			<img src="/src/img/logo.png">
+			</div>
+			  <ul class="nav col-8 justify-content-end">
 				  <li class="nav-item">
 					<a class="nav-link" href="#">Про бренд</a>
 				  </li>
@@ -31,37 +34,30 @@
 				  <li class="nav-item">
 					<a class="nav-link" href="#">INSTA</a>
 				  </li>
-			  </ul>
-			  
-			
-			  
-           
+			  </ul>         
         </div>
+			
     </header>
     <!-- HEADER END -->
-
     <!-- CONTENT -->
     <main class="content">
-		<section class="section">
-			<div class="container"></div>
-		</section>
-        <!--<div class="section">
+		      <div class="section">
             <div class="container">
-                <h2>Section Slider</h2>
-
-                <div class="main-slider swiper-container">
+                 <div class="main-slider swiper-container">
                     <div class="swiper-wrapper">
-                       
-                        <div class="swiper-slide">
+                         <div class="swiper-slide first-slide">
                             <picture>
-                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/log-dalas-gold.png') %>" alt="example" title="example">
                             </picture>
+									<h1>Тут може бути слоган</h1>
+									<p>Виглядай SUPER за будь-яких умов та де завгодно!</p>
                         </div>
-
-                        <div class="swiper-slide">
+                        <div class="swiper-slide second-slide">
                             <picture>
-                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/placeholder-img.jpg') %>" alt="example" title="example">
+                                <img src="<%= require('./img/default.svg') %>" data-src="<%= require('./img/logo-red_bottle.png') %>" alt="example" title="example">
                             </picture>
+									 <h1>Тут може бути слоган</h1>
+									 <p>Виглядай SUPER за будь-яких умов та де завгодно!</p>
                         </div>
 
                         <div class="swiper-slide">
@@ -85,15 +81,15 @@
 
                     <div class="swiper-pagination"></div>
 
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                   <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
 
                    
                 </div>
             </div>
-        </div>-->
+        </div>
 
-        <div class="section">
+      <!--  <div class="section">
             <div class="container">
                 <h2>Section Pictures</h2>
                 <picture>
@@ -104,8 +100,15 @@
                     <use xlink:href="img/spritemap.svg#sprite-ok"></use>
                 </svg>
             </div>
-        </div>
-
+        </div>-->
+<div class="characteristic__section">
+		<div class="characteristic__container">
+			<div class="charactericstic__item"></div>
+			<h2>ЧОМУ ЖІНКИ ОБИРАЮТЬ DALLAS</h2>
+			<div class="charactericstic__item"></div>
+		</div>
+		</div>
+		</div>
            </main>
     <!-- CONTENT END -->
 
