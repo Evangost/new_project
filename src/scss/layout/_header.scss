@@ -3,24 +3,17 @@
 *************************************************/
 header.header {
   order: 1;
+  padding-top: 47px;
   -webkit-order: 1;
   position: absolute;
   min-width: 320px;
   width: 100%;
   z-index: 3;
-  
+}
 
-  .main-logo {
-	padding-top: 47px;
-	padding-left: 147px;
-	}
-} 
-
-.nav {
-	padding-top: 47px;
-	padding-right: 15%;
-
-		&-link {
+ .nav {
+	
+	&-link {
 		font-size: 14px;
 		color: #FFFFFF;
 		line-height: 17px;
