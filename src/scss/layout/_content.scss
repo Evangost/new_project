@@ -22,75 +22,96 @@
 		justify-content: center;
 		align-content: center;
 		align-items: center;
+
+		&.first-slide {
+			position: relative;
+			background: linear-gradient(102.57deg, #333333 30.83%, #3a3a3a 49.73%, #000000 100%);
+
+			&::before {
+				content: "dalas";
+				position: absolute;
+				font-size: 170px;
+				color: #282828;
+				text-transform: uppercase;
+			}
+			
+			img {
+				margin-top: 224px;
+			}
+		}
+
+		&.second-slide {
+			position: relative;
+			background: linear-gradient(102.57deg, #219653 30.83%, #27ae60 49.73%, #135730 100%);
+			
+			&::before {
+				content: "NATURAL";
+				position: absolute;
+				font-size: 170px;
+				color: #f2f2f2;
+				opacity: 30%;
+			}
+			
+			img {
+				margin-top: 50px;
+			}
+
+			.title {
+				margin-top: 0;
+			}
+		}
 		
 		picture {
 			position: relative;
 		}
-	}
-	h1 {
+
+		.title {
 		color: #ffffff;
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 35.4px;
 		margin-top: 95px;
-	}
-	p {
-		color: #ffffff;
-		font-family: "Geometria";/*добавить как шаблон*/
-		font-weight: bolder;
-		font-size: 16px;
-		line-height: 26px;
-		margin-top: 15px;
-	}
-
-	.first-slide::before {
-		content: "dalas";
-		position: absolute;
-		font-size: 170px;
-		color: #282828;
-		text-transform: uppercase;
-	}
-	.first-slide {
-		position: relative;
-		background: linear-gradient(102.57deg, #333333 30.83%, #3a3a3a 49.73%, #000000 100%);
-		
-		img {
-			margin-top: 224px;
-		}
-	}
-
-	.second-slide {
-		position: relative;
-		background: linear-gradient(102.57deg, #219653 30.83%, #27ae60 49.73%, #135730 100%);
-		
-		&::before {
-			content: "NATURAL";
-			position: absolute;
-			font-size: 170px;
-			color: #f2f2f2;
-			opacity: 30%;
-		}
-		
-		img {
-			margin-top: 50px;
 		}
 
-		h1 {
-			margin-top: 0;
+		p {
+			color: #ffffff;
+			font-family: "Geometria";/*добавить как шаблон*/
+			font-weight: bolder;
+			font-size: 16px;
+			line-height: 26px;
+			margin-top: 15px;
 		}
 	}
+	
+	.swiper-pagination {
+		&-bullet {
+			width: 40px;
+			height: 2px;
+			margin: 0 5px !important;
+			background: #F2F2F2;
+			border-radius: 0;
+			opacity: 1;
+			
+			&-active {
+    			background: #A5853F;
+			}
+		}
+	}
+	
 }
-.title__container {
-	display: flex;
-	padding-top: 66px;
-	width: 100%;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	h2 {
-		font-size: 32px;
-		color: #3a3a3a;
+.title {
+	&__container {
+		display: flex;
+		padding-top: 66px;
+		width: 100%;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		h2 {
+			font-size: 32px;
+			color: #3a3a3a;
+		}
 	}
 }
 .title__column{
