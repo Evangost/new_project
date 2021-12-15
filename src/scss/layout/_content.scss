@@ -108,16 +108,24 @@
 		justify-content: center;
 		align-content: center;
 		align-items: center;
+			}
 		h2 {
 			font-size: 32px;
 			color: #3a3a3a;
 		}
 	}
-}
 .title__column{
+	position: relative;
+	width: 100%;
 	align-content: center;
 	align-items: center;
-
+		&::before {
+		content: "benefits";
+		position: absolute;
+		font-size: 170px;
+		color: #F2F2F2;
+		text-transform: uppercase;
+	}
 	h3{
 		font-size: 16px;
 		text-transform: uppercase;
@@ -137,3 +145,11 @@
 		max-height: 127px;
 	}
 }
+.video-wrapper{
+	display: flex;
+	margin-top: 160px;
+	margin-left: 147px;
+	width: 100%;
+	align-content: center;
+	align-items: center;
+} 
