@@ -1,6 +1,14 @@
 /*************************************************
 ********************* CONTENT ********************
 *************************************************/
+%p-sample{
+	font-family: "Geometria";/*добавить как шаблон*/
+	font-weight: bolder;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+
 .content {
 	position: relative;
 	width: 100%;
@@ -75,10 +83,7 @@
 
 		p {
 			color: #ffffff;
-			font-family: "Geometria";/*добавить как шаблон*/
-			font-weight: bolder;
-			font-size: 16px;
-			line-height: 26px;
+			@extend %p-sample;
 			margin-top: 15px;
 		}
 	}
@@ -93,7 +98,7 @@
 			opacity: 1;
 			
 			&-active {
-    			background: #A5853F;
+    		background: #A5853F;
 			}
 		}
 	}
@@ -114,42 +119,85 @@
 			color: #3a3a3a;
 		}
 	}
-.title__column{
+.column{
 	position: relative;
-	width: 100%;
-	align-content: center;
-	align-items: center;
+	text-align: center;
 		&::before {
 		content: "benefits";
 		position: absolute;
+		width: 100%;
+		left: 50%;
+		margin-left:-50%;
 		font-size: 170px;
+		text-align: center;
 		color: #F2F2F2;
 		text-transform: uppercase;
-	}
+		}
 	h3{
 		font-size: 16px;
 		text-transform: uppercase;
 		color: #A5853F;
 		max-width: 312px;
 		max-height: 127px;
-	   text-align: center;
-		margin-top: 99px;
-		margin-bottom: 34px;
+	   margin: 99px auto 34px auto;
 	}
 	p{
-		font-family: 'Geometria';
+		@extend %p-sample;
 		color:#000000;
-		font-weight:bold;
-		font-size: 16px;
 		max-width: 312px;
 		max-height: 127px;
+		margin: 0 auto 0 auto;
 	}
 }
-.video-wrapper{
+.info{
 	display: flex;
 	margin-top: 160px;
 	margin-left: 147px;
-	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
 	align-content: center;
 	align-items: center;
+  			.title {
+				  p{
+			@extend %p-sample;
+			width: 312px;
+			height:136px;
+			color: #000000;
+			}
+			h3{
+			font-size: 32px;
+			text-transform: uppercase;
+			}
+		}
+     picture{
+		  position: relative;
+	    &::before{
+		  content: "video";
+		  position: absolute;
+		  right: 100%;
+		  color:#F2F2F2;
+				font-size: 150px;
+				writing-mode: tb-rl;
+				transform: rotate(-180deg);
+				text-transform: uppercase;
+	  }
+	}
+
+	/*	.video{
+			display: inline;
+			 width: 50%;
+			height: 50%;
+			p{
+				color:#F2F2F2;
+				font-size: 150px;
+				writing-mode: tb-rl;
+				transform: rotate(-180deg);
+				text-transform: uppercase;
+				img{
+					display: inline-block;
+					float: right;
+				}
+			}
+		}*/
 } 
+
